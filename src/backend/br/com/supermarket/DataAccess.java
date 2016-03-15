@@ -22,11 +22,11 @@ public class DataAccess {
 		try{
 			return DriverManager.getConnection(
 				"jdbc:mysql://localhost:3306"+//db address
-				"/javadb"+//name of the db
+				"/NOME_DO_BANCO"+//name of the db
 				"?autoReconnect=true"+//autoReconnect?
 				"&useSSL=false",//use SSL?
-				"root",//insert your db login here
-				"!MatPK1991"//insert your password here
+				"LOGIN",//insert your db login here
+				"PASSWORD"//insert your password here
 			);
 		}catch(Exception e){
 			e.printStackTrace();
